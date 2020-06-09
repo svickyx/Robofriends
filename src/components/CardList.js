@@ -23,6 +23,9 @@ import Card from './Card';
 
 // 另一種寫法：
 const CardList = ( {robots} )=> {
+    if(true){
+        throw new Error('Nooooooo');
+    }
     const cardArray = robots.map((user,i) => {
         return ( <Card key={"rob"+i} id={robots[i].id} name={robots[i].name} email={robots[i].email} />);
     })
